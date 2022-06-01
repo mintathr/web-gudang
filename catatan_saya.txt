@@ -1,0 +1,22 @@
+#### CREATE/ MEMBUAT TABLE ####
+create table tbl_siswa (
+    id int auto_increment primary key,
+    nis int unique not null,
+    nama varchar(50) not null,
+    id_wali_kelas int not null);
+
+#### READ TABLE ####
+select * from tbl_siswa;
+
+#### UPDATE TABLE ####
+update tbl_siswa set 
+nis='apa perubahannya',
+nama = 'apa perubahannya'
+where id= 1; (id yang mana yang akan dirubah)
+
+#### DELETE TABLE ####
+delete from tbl_siswa where id= 1; (id yang mana yang akan dirubah)
+
+
+
+
